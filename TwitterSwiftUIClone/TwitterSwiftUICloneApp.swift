@@ -4,7 +4,9 @@ import SwiftUI
 struct TwitterSwiftUICloneApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

@@ -156,9 +156,9 @@
 		9142F5FF2AA8C1C900FF3C32 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				9142F6012AA8C1E300FF3C32 /* SideMenuView.swift */,
 				9142F6032AA8C1ED00FF3C32 /* Views */,
 				9142F6002AA8C1D300FF3C32 /* ViewModels */,
-				9142F6012AA8C1E300FF3C32 /* SideMenuView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
