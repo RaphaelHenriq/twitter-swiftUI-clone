@@ -21,6 +21,8 @@
 		9142F6052AA8C1F900FF3C32 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142F6042AA8C1F900FF3C32 /* SideMenuRowView.swift */; };
 		9142F6072AA8C20500FF3C32 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142F6062AA8C20500FF3C32 /* SideMenuViewModel.swift */; };
 		9142F60A2AA8E65E00FF3C32 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142F6092AA8E65E00FF3C32 /* UserStatsView.swift */; };
+		9182477C2ABA3CCD00E63958 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182477B2ABA3CCD00E63958 /* NewTweetView.swift */; };
+		9182477E2ABA441000E63958 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9182477D2ABA441000E63958 /* TextArea.swift */; };
 		91E14D912A83CFD1003BFD40 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E14D902A83CFD1003BFD40 /* FeedView.swift */; };
 		91E14D942A83D089003BFD40 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E14D932A83D089003BFD40 /* TweetRowView.swift */; };
 		91E14D972A83D95A003BFD40 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E14D962A83D95A003BFD40 /* MainTabView.swift */; };
@@ -42,6 +44,8 @@
 		9142F6042AA8C1F900FF3C32 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		9142F6062AA8C20500FF3C32 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		9142F6092AA8E65E00FF3C32 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		9182477B2ABA3CCD00E63958 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		9182477D2ABA441000E63958 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		91E14D902A83CFD1003BFD40 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		91E14D932A83D089003BFD40 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
 		91E14D962A83D95A003BFD40 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -183,13 +187,39 @@
 			isa = PBXGroup;
 			children = (
 				9142F6092AA8E65E00FF3C32 /* UserStatsView.swift */,
+				9182477D2ABA441000E63958 /* TextArea.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		918247782ABA3CA300E63958 /* UploadTweet */ = {
+			isa = PBXGroup;
+			children = (
+				9182477A2ABA3CBA00E63958 /* Views */,
+				918247792ABA3CB300E63958 /* ViewModels */,
+			);
+			path = UploadTweet;
+			sourceTree = "<group>";
+		};
+		918247792ABA3CB300E63958 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9182477A2ABA3CBA00E63958 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9182477B2ABA3CCD00E63958 /* NewTweetView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		91E14D8B2A83CEC5003BFD40 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				918247782ABA3CA300E63958 /* UploadTweet */,
 				9142F6082AA8E64800FF3C32 /* Commons */,
 				9142F5FF2AA8C1C900FF3C32 /* SideMenu */,
 				913E32AE2A9EAEC900D8E6FB /* Profile */,
@@ -322,7 +352,9 @@
 				9142F6022AA8C1E300FF3C32 /* SideMenuView.swift in Sources */,
 				910F1D4D2A83C8A1008A9FA6 /* TwitterSwiftUICloneApp.swift in Sources */,
 				913E32A62A9EAD2F00D8E6FB /* ExploreView.swift in Sources */,
+				9182477E2ABA441000E63958 /* TextArea.swift in Sources */,
 				9142F6072AA8C20500FF3C32 /* SideMenuViewModel.swift in Sources */,
+				9182477C2ABA3CCD00E63958 /* NewTweetView.swift in Sources */,
 				913E32B72AA165AF00D8E6FB /* UserRowView.swift in Sources */,
 				91E14D972A83D95A003BFD40 /* MainTabView.swift in Sources */,
 				913E32A92A9EAD6000D8E6FB /* NotificationsView.swift in Sources */,
