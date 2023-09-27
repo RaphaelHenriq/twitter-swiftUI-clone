@@ -51,8 +51,6 @@ struct SideMenuView: View {
     }
 }
 
-struct SideMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        SideMenuView()
-    }
+#Preview {
+    SideMenuView()
 }

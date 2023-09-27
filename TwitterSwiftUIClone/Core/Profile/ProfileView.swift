@@ -29,10 +29,8 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
+#Preview {
+    ProfileView()
 }
 
 extension ProfileView {
@@ -165,7 +163,6 @@ extension ProfileView {
                 ForEach(0 ... 9, id: \.self) { _ in
                     TweetRowView()
                 }
-//                .padding()
             }
         }
     }

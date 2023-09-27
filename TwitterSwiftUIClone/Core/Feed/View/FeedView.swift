@@ -17,10 +17,8 @@ struct FeedView: View {
     }
 }
 
-struct FeedView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedView()
-    }
+#Preview {
+    FeedView()
 }
 
 extension FeedView {
@@ -39,7 +37,7 @@ extension FeedView {
         .clipShape(Circle())
         .padding()
         .fullScreenCover(isPresented: $showNewTweetView) {
-            Text("Nova tela")
+            NewTweetView()
         }
     }
 }

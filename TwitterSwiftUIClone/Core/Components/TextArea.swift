@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextArea: View {
     @Binding private var text: String
-    private var placeholder: String
+    private let placeholder: String
     
     init(text: Binding<String>, placeholder: String) {
         self._text = text

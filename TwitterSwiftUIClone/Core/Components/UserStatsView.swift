@@ -32,9 +32,7 @@ struct UserStatsView: View {
     }
 }
 
-struct UserStatsView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserStatsView()
-    }
+#Preview {
+    UserStatsView()
 }
 

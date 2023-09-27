@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewTweetView: View {
     @State private var caption: String = ""
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         VStack {
@@ -20,21 +21,20 @@ struct NewTweetView: View {
                 
                 TextArea(text: $caption, placeholder: "What's happen?")
             }
+            .padding()
         }
     }
 }
 
-struct NewTweetView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewTweetView()
-    }
+#Preview {
+    NewTweetView()
 }
 
 extension NewTweetView {
     private var navigationView: some View {
         HStack {
             Button {
-                print("cancel")
+                presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("Cancel")
             }

@@ -65,8 +65,6 @@ struct TweetRowView: View {
     }
 }
 
-struct TweetRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        TweetRowView()
-    }
+#Preview {
+    TweetRowView()
 }
